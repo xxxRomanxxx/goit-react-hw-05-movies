@@ -1,0 +1,21 @@
+.header {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 10px 5px 5px rgb(221, 228, 90);
+  }
+
+.list {
+    display: flex;
+    gap: 40px;
+}
+
+.item {
+    font-size: 40px; 
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(116, 116, 8);
+}
