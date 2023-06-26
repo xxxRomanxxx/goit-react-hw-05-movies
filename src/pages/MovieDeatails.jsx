@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { fetchMovieDetail } from "Api/Api";
 import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
 import MovieInfo from 'components/MovieInfo/MovieInfo';
@@ -50,7 +50,9 @@ const MovieDetails = () => {
             <Link to="reviews" state={{from: backPath}}>Reviews</Link>
           </li>
         </ul>
-        <Outlet/>
+        <Suspense>
+          <Outlet />
+        </Suspense>
         </div>
     )
   }
