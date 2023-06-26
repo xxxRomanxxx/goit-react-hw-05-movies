@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/337.c12e9622.chunk.css","mappings":"AAAA,4BAEI,UAAW,CADX,gBAEJ,CAEA,2BACI,gBACJ","sources":["components/ReviewDetails/ReviewDetails.module.css"],"sourcesContent":[".title {\n    font-weight: 40px;\n    color: blue;\n}\n\n.text {\n    font-weight: 30px;\n}\n\n"],"names":[],"sourceRoot":""}
