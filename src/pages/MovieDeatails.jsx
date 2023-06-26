@@ -10,14 +10,14 @@ import css from './page.module.css'
 
 
 const MovieDetails = () => {
-   const location = useLocation();
     const [movies, setMovies] = useState({});
     const [error, setError] = useState('');
     const {movieId} = useParams();
 
-    
-    console.log(location.state);
+    const location = useLocation();
+    console.log(location);
     const backPath = location.state?.from ?? '/';
+    console.log(backPath);
 
     useEffect(() => {
         async function fetchMovies() {
