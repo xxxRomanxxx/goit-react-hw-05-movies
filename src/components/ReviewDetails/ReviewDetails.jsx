@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './ReviewDetails.module.css'
 
 const ReviewDetails = ({author_details, content}) => {
 	return (
-		<li>
-			<h3>{author_details.username}</h3>
-			<p>{content}</p>
+		<li className={css.list}>
+			<h3 className={css.title}>{author_details.username}</h3>
+			<p className={css.text}>{content}</p>
 		</li>
 	)
 };

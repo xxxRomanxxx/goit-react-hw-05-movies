@@ -9,4 +9,3 @@ const Back = ({to}) => {
 };
 
 export default Back;
-

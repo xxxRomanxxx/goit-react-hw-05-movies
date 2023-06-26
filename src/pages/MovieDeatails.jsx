@@ -10,11 +10,13 @@ import css from './page.module.css'
 
 
 const MovieDetails = () => {
+   const location = useLocation();
     const [movies, setMovies] = useState({});
     const [error, setError] = useState('');
     const {movieId} = useParams();
 
-    const location = useLocation();
+    
+    console.log(location.state);
     const backPath = location.state?.from ?? '/';
 
     useEffect(() => {
@@ -28,7 +30,18 @@ const MovieDetails = () => {
         });
       }, [movieId]);
 
+      if (error) {
+        return (
+            <div>
+                <Back to={backPath} />
+                <h1>{error}</h1>
+            </div>
+        )
+      }
+
     return (
+
+      
         <div className={css.container}>
             <Back to={backPath}/>
        {error ? (
