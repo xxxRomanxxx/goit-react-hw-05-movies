@@ -12,7 +12,7 @@ const MovieInfo = ({title, poster, vote, overview, genres}) => {
             </div>
             <div className={css.infoContainer}>
             <h2 className={css.title}>{title}</h2>
-            <p className={css.text}>{vote * 10}%</p>
+            <p className={css.text}>{(vote * 10).toFixed(2)}%</p>
             <h2 className={css.title}>Overview</h2>
             <p className={css.text}>{overview}</p>
             <h2 className={css.title}>Genres</h2>
