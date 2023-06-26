@@ -15,9 +15,7 @@ const MovieDetails = () => {
     const {movieId} = useParams();
 
     const location = useLocation();
-    console.log(location);
     const backPath = location.state?.from ?? '/';
-    console.log(backPath);
 
     useEffect(() => {
         async function fetchMovies() {
